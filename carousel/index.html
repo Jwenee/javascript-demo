@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>carousel</title>
+  <style>
+    #banner {
+      width: 500px;
+      height: 300px;
+      outline: 10px solid;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="banner"></div>
+  <script src="banner.js"></script>
+  <script>
+    const bannerArea = document.getElementById('banner')
+    createBannerArea(bannerArea, [
+      {imgUrl: 'images/1.jpg', link: 'www.ke.qq.com'},
+      {imgUrl: 'images/2.jpg', link: 'www.baidu.com'},
+      {imgUrl: 'images/3.jpg', link: 'www.bilibili.com'},
+      {imgUrl: 'images/4.jpg', link: 'www.huya.com'}
+    ])
+  </script>
+</body>
+</html>
